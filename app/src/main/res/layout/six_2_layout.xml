@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_view"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<com.example.smearcamera.utils.ScaleImageView
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:id="@+id/first"
+    app:layout_constraintWidth_percent="0.3"
+    app:layout_constraintHeight_percent="0.4"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/second"
+    app:layout_constraintBottom_toTopOf="@id/fourth"
+    app:layout_constraintVertical_chainStyle="spread"
+    app:layout_constraintHorizontal_chainStyle="spread"/>
+    <com.example.smearcamera.utils.ScaleImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/second"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintEnd_toStartOf="@id/third"
+        app:layout_constraintStart_toEndOf="@id/first"
+        app:layout_constraintTop_toTopOf="@id/first"/>
+    <com.example.smearcamera.utils.ScaleImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/third"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintStart_toEndOf="@id/second"
+        app:layout_constraintTop_toTopOf="@id/first"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <com.example.smearcamera.utils.ScaleImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/fourth"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintEnd_toStartOf="@id/fifth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first"
+        />
+
+    <com.example.smearcamera.utils.ScaleImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/fifth"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintStart_toEndOf="@id/fourth"
+        app:layout_constraintTop_toTopOf="@id/fourth"
+        app:layout_constraintEnd_toStartOf="@id/sixth"
+        />
+
+    <com.example.smearcamera.utils.ScaleImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/sixth"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintStart_toEndOf="@id/fifth"
+        app:layout_constraintTop_toTopOf="@id/fourth"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

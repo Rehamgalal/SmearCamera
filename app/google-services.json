@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "168928344832",
+    "project_id": "smear-camera",
+    "storage_bucket": "smear-camera.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168928344832:android:d16e7788f29986e98dd1e5",
+        "android_client_info": {
+          "package_name": "com.example.smearcamera"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168928344832-r3277dvhnb5dub2hlga6acl770vf1r9r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdDqZsXd1Q1GSdqu7uPKd2JLkuhiFJoI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168928344832-r3277dvhnb5dub2hlga6acl770vf1r9r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

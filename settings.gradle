@@ -1,0 +1,3 @@
+include ':ImageFilter'
+include ':app'
+rootProject.name = "Smear Camera"

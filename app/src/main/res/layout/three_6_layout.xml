@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_view"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<com.example.smearcamera.utils.SlantTopView
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:id="@+id/first"
+    android:src="@drawable/six_6"
+    android:layout_marginTop="20dp"
+    app:layout_constraintWidth_percent="0.45"
+    app:layout_constraintHeight_percent="0.45"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/second"
+    app:layout_constraintTop_toTopOf="parent"/>
+    <com.example.smearcamera.utils.SlantTopView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/second"
+        android:src="@drawable/six_6"
+        android:layout_marginTop="20dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.55"
+        app:layout_constraintStart_toEndOf="@id/first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.example.smearcamera.utils.SlantBottomView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/third"
+        android:layout_margin="20dp"
+        android:src="@drawable/six_6"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintWidth_percent="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
